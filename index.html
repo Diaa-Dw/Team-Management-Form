@@ -4,7 +4,186 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link main.css -->
+    <link rel="stylesheet" href="./style/main.css" />
+
     <title>Frontend Development Team Management</title>
   </head>
-  <body></body>
+  <body>
+    <main class="team-management">
+      <h1 class="team-management__title">
+        Add members to Front-end development team
+      </h1>
+
+      <form class="team-management__form">
+        <!-- Search Section -->
+        <div class="team-management__search">
+          <label for="member-search" class="visually-hidden"
+            >Find members</label
+          >
+          <input
+            id="member-search"
+            type="search"
+            class="team-management__search-input"
+            placeholder="Find members"
+            aria-label="Find members"
+          />
+        </div>
+
+        <!-- Members List -->
+        <fieldset class="team-management__members">
+          <legend class="team-management__members-title">
+            Select team members
+          </legend>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-carolien1"
+              name="member-carolien1"
+              value="Carolien Bloeme"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-carolien1" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Carolien Bloeme</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-carolien2"
+              name="member-carolien2"
+              value="Carolien Bloeme"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-carolien2" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Carolien Bloeme</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-sun-jun"
+              name="member-sun-jun"
+              value="Sun Jun"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-sun-jun" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Sun Jun</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-song-bao"
+              name="member-song-bao"
+              value="Song Bao"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-song-bao" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Song Bao</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-olivia1"
+              name="member-olivia1"
+              value="Olivia Arribas"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-olivia1" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Olivia Arribas</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-olivia2"
+              name="member-olivia2"
+              value="Olivia Arribas"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-olivia2" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Olivia Arribas</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-bonginkosi"
+              name="member-bonginkosi"
+              value="Bonginkosi Midadlana"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-bonginkosi" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Bonginkosi Midadlana</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-arina"
+              name="member-arina"
+              value="Arina Belomestnykh"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-arina" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Arina Belomestnykh</span>
+            </label>
+          </div>
+
+          <div class="team-management__member">
+            <input
+              type="checkbox"
+              id="member-jacqueline"
+              name="member-jacqueline"
+              value="Jacqueline Likoki"
+              class="team-management__member-checkbox"
+            />
+            <label for="member-jacqueline" class="team-management__member-name">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Jacqueline Likoki</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Form Actions -->
+        <div class="team-management__actions">
+          <button type="reset" class="button button--cancel">Cancel</button>
+          <button type="submit" class="button button--save">Save</button>
+        </div>
+      </form>
+
+      <!-- Close Button -->
+      <button type="button" class="team-management__close" aria-label="Close">
+        <i class="fa-solid fa-x" aria-hidden="true"></i>
+        <span class="visually-hidden">ESC</span>
+      </button>
+    </main>
+  </body>
 </html>
