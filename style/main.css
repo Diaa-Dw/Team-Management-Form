@@ -58,8 +58,11 @@ body {
 
 /* fieldset of team mangament  */
 .team-management__members {
-  border: none;
   width: min(100%, 30rem);
+  max-height: 40rem;
+  overflow: auto;
+
+  border: none;
 }
 
 /* Search input */
