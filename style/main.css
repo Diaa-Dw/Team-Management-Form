@@ -150,7 +150,7 @@ body {
 }
 
 .team-management__member-checkbox:checked::after {
-  content: "✔";
+  content: "\2714";
   border-color: var(--green);
 }
 
