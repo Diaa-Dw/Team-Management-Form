@@ -27,9 +27,7 @@
       <form class="team-management__form">
         <!-- Search Section -->
         <div class="team-management__search">
-          <label for="member-search" class="visually-hidden"
-            >Find members</label
-          >
+          <label for="member-search" class="hidden">Find members</label>
           <input
             id="member-search"
             type="search"
@@ -37,11 +35,12 @@
             placeholder="Find members"
             aria-label="Find members"
           />
+          <i class="fa-solid fa-magnifying-glass team-management__search-icon"></i>
         </div>
 
         <!-- Members List -->
         <fieldset class="team-management__members">
-          <legend class="team-management__members-title">
+          <legend class="team-management__members-title hidden">
             Select team members
           </legend>
 
